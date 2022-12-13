@@ -1,0 +1,10 @@
+version: "2"
+services:
+  docker-spring:
+    container_name: docker-spring
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "docker-spring"
+    ports:
+      - "8080:8080"
